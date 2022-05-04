@@ -2,68 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISPO</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DISPO BABY</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 </head>
-
 <body>
-     <header>
-        
-            <a href="../index.html"><img class="header__img" src="../Imagenes/DISPO.jpeg"></a>
-        
-        <nav>
-            <ul class="menu">
-               <a href="usuario.html"><img class="carrito" src="../Imagenes/carrito.png"></a>
-                <li class="menu__opciones"><a href="../index.html" id="Inicio">Inicio</a></li>
-                <li class="menu__opciones"><a href="indumentaria.html">Indumentaria</a>
-                </li>
-                <li class="menu__opciones"><a href="comprando.html">Guia de Compra</a></li>
-                <li class="menu__opciones"><a href="contacto.html">Contacto</a></li>
-                <li class="menu__opciones"><a href="usuario.html">Usuario</a></li>
-            </ul>
+    <!-- <header class="container">
+        <nav class="d-flex justify-content-between navbar">
+            <div class="col-sm-1">
+           <a href="index.html"><img class="img-fluid" src="../Imagenes/DISPO.jpeg"></a>
+           </div>
+            <div class=" col-sm-4 d-flex">
+                <a class="navbar-brand text-decoration-none" href="../index.html" id="Inicio">Inicio</a>
+                <a class="navbar-brand text-decoration-none" href="indumentaria.html">Indumentaria</a>
+                <a class="navbar-brand text-decoration-none" href="comprando.html">Guia de Compra</a>
+                <a class="navbar-brand text-decoration-none" href="contacto.html">Contacto</a>
+                <a class="navbar-brand text-decoration-none" href="usuario.html">Usuario</a>
+            </div>
+        </nav>
+    </header> -->
 
-    </nav>
+    <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        
 
-    </header>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../index.html" class="nav-link px-2 fw-bold text-secondary">INICIO</a></li>
+          <li><a href="indumentaria.html" class="nav-link px-2 text-white">Indumentaria</a></li>
+          <li><a href="comprando.html" class="nav-link px-2 text-white">Guia de Compra</a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Busqueda.." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          
+          <a href="usuario.html"><button type="button" class="btn btn-warning">Login</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <main>
     
-    <div class="contacto__formulario">
+   
+    <section class="container">
         <form>
-            <fieldset> <legend>CONTACTO</legend>
-            <label for="nombre">Nombre Completo </label>
-            <input class="formulario__elemento" type="text" name="nombre" placeholder="Nombre y Apellido">
-            <label for="email">Email </label>
-            <input class="formulario__elemento" type="email" name="email" placeholder="correo.electronico@gmail.com">
-            <label for="telefono">Número de Contacto </label>
-            <input class="formulario__elemento" type="number" name="telefono" placeholder="3416112233">
-            <label for="tipo">Tipo </label>
-            <select class="formulario__elemento" name="tipo">
-                <option value="consulta">Consulta</option>
-                <option value="reclamo">Reclamo</option>
-            </select>
-            <textarea></textarea>
-            <input class="boton__enviar" type="submit" name="Enviar">
-            </fieldset>
+            <input type="text" placeholder="Nombre" class="form-control mb-2">
+            <input type="email" placeholder="email" class="form-control mb-2">
+            <textarea rows="5" placeholder="mensaje" class="form-control mb-2"></textarea >
+            <button type="submit" class="btn btn-warning">Enviar</button>
         </form>
-    </div>
+    </section>
 
-   <a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
-<div class="publicidad">
-        ESPACIO PUBLICITARIO
-    </div>
-    </a>
+   <section class="container" >
+            <a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
+            <h2>ESPACIO PUBLICITARIO</h2>
+            </a>
+        </section>
 
     </main>
 
     
 
-     <footer>
+     <footer class="footer mt-auto py-3 bg-light">
         <p>Derechos Reservados - <a href="#">DISPO</a></p>
         <p>Creciendo Juntos - <a href="#">AR</a></p>
         

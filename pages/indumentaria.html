@@ -2,80 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISPO</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600;900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DISPO BABY</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 </head>
-
-<body class="bodyIndumentaria">
-     <header>
-        
-            <a href="../index.html"><img class="header__img zoomImg" src="../Imagenes/DISPO.jpeg"></a> 
-        
-        <nav>
-            <ul class="menu">
-                <a href="usuario.html"><img class="carrito zoomImg" src="../Imagenes/carrito.png"></a>
-                <li class="menu__opciones mobileNone zoomImg"><a href="../index.html" id="Inicio">Inicio</a></li>
-                <li class="menu__opciones zoomImg"><a href="indumentaria.html">Indumentaria</a>
-                </li>
-                <li class="menu__opciones zoomImg"><a href="comprando.html">Guia de Compra</a></li>
-                <li class="menu__opciones mobileNone zoomImg"><a href="contacto.html">Contacto</a></li>
-                <li class="menu__opciones zoomImg"><a href="usuario.html">Usuario</a></li>
-            </ul>
-
-    </nav>
-
+<body>
+    <header class="container">
+        <nav class="d-flex justify-content-between navbar">
+            <div class="col-sm-1">
+           <a href="../index.html"><img class="img-fluid" src="../Imagenes/DISPO.jpeg"></a>
+           </div>
+            <div class=" col-sm-4 d-flex">
+                <a class="navbar-brand text-decoration-none" href="../index.html" id="Inicio">Inicio</a>
+                <a class="navbar-brand text-decoration-none" href="indumentaria.html">Indumentaria</a>
+                <a class="navbar-brand text-decoration-none" href="comprando.html">Guia de Compra</a>
+                <a class="navbar-brand text-decoration-none" href="contacto.html">Contacto</a>
+                <a class="navbar-brand text-decoration-none" href="usuario.html">Usuario</a>
+            </div>
+        </nav>
     </header>
 
-            <div class="titulo">
-                <h1 class="titulo animate__animated animate__zoomIn">ELIGIENDO <span>PARA</span></h1>
-            </div>
 
+    <main>
 
-            <a class="publicidad1 mobileNone zoomImg" href="https://www.instagram.com/indu_masculina_rya/?hl=es">
-            
-            <img class="ajustandoImg" src="../Imagenes/publicidad2.jpeg">
-           
-            </a>
+        <section class="container">
+        <div class="row">
+            <h1>ELIGIENDO PARA</h1> 
+        </div>
+        </section>
+    
+        <section class="container">
+        <div class="row">
+            <div class="col-sm-3"><a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
+            <img src="../Imagenes/publicidad2.jpeg" class="img-fluid">
+            </a></div>
 
-            <a class="destacado zoomImg" href="#">
-                <img class="destacadoImg" src="../Imagenes/hombre.jpg">
-                    <h1 class="destacadoTexto" >HOMBRE</h1>
-            </a>
+            <div class="col-sm-3"> <a href="#" class="text-reset position-relative">
+                <img  src="../Imagenes/hombre.jpg" class="img-fluid">
+                    <h2 class="position-absolute top-50 start-50 translate-middle text-warning bg-secondary rounded">HOMBRE</h2>
+            </a></div>
 
-            <a class="oferta zoomImg" href="#">
-                <img class="destacadoImg" src="../Imagenes/mujer.jpg">
-                    <h1 class="destacadoTexto" >MUJER</h1>
-            </a>
-            
-            <a class="publicidad2 mobileNone zoomImg zoomImg" href="https://www.instagram.com/indu_masculina_rya/?hl=es">
-            
-            <img class="ajustandoImg" src="../Imagenes/publicidad2.jpeg">
-           
-            </a>
-        
-            
-<section class="publicidad3">
+            <div class="col-sm-3"><a href="#" class="text-reset position-relative">
+                <img  src="../Imagenes/mujer.jpg" class="img-fluid">
+                    <h2 class="position-absolute top-50 start-50 translate-middle text-warning bg-secondary rounded">MUJER</h2>
+            </a></div>
+
+            <div class="col-sm-3"><a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
+            <img  src="../Imagenes/publicidad2.jpeg" class="img-fluid">
+            </a></div>
+        </div>
+        </section>  
+
+        <section class="container" >
             <a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
-            <div class="publicidad">
-            ESPACIO PUBLICITARIO
-            </div>
+            <h2>ESPACIO PUBLICITARIO</h2>
             </a>
         </section>
 
-        
+    </main>
     
 
-    <footer>
+    <footer class="footer mt-auto py-3 bg-light">
         <p>Derechos Reservados - <a href="#">DISPO</a></p>
         <p>Creciendo Juntos - <a href="#">AR</a></p>
         
