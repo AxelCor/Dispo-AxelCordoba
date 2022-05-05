@@ -350,4 +350,28 @@ template {
 body{
   
   text-align: center;
+  background: linear-gradient(to right, lightgray, white);
+}
+
+
+h1{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.spinner-grow{
+  margin-right: 1em;
+    margin-left: 1em;
+}
+
+img{
+   transition: 1.5s;
+    
+}
+img:hover{
+ 
+    
+transform: scale3d(-1.1, 1.1, 1.1);
+
 }

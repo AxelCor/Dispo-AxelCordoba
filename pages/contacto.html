@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DISPO BABY</title>
+    <title>DISPO</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
 </head>
 <body>
     <header class="p-3 bg-dark text-white">
@@ -18,12 +20,14 @@
           <li><a href="indumentaria.html" class="nav-link px-2 text-white">Indumentaria</a></li>
           <li><a href="comprando.html" class="nav-link px-2 text-white">Guia de Compra</a></li>
           <li><a href="contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+
         </ul>
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Busqueda.." aria-label="Search">
         </form>
         <div class="text-end">
-          <a href="usuario.html"><button type="button" class="btn btn-warning">Login</button></a>
+          <a href="usuario.html"><button type="button" class="btn btn-outline-light me-2">Perfil</button></a>
+          <a href="login.html"><button type="button" class="btn btn-warning">Login</button></a>
         </div>
       </div>
     </div>
@@ -32,30 +36,43 @@
     <main>
     
    
-    <section class="container">
+    <section class="mt-4 container">
         <form>
             <input type="text" placeholder="Nombre" class="form-control mb-2">
-            <input type="email" placeholder="email" class="form-control mb-2">
-            <textarea rows="5" placeholder="mensaje" class="form-control mb-2"></textarea >
-            <button type="submit" class="btn btn-warning">Enviar</button>
+            <input type="email" placeholder="Email" class="form-control mb-2">
+            <input type="text" placeholder="Telefono" class="form-control mb-2">
+            <textarea rows="5" placeholder="Mensaje..." class="form-control mb-2"></textarea >
+            <button type="submit" class="btn btn-warning">ENVIAR</button>
         </form>
     </section>
 
    <section class="container" >
-            <a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
+            <div class="mt-4 alert alert-secondary" role="alert">
+            <a href="https://www.instagram.com/indu_masculina_rya/?hl=es" class="text-decoration-none link-warning">
             <h2>ESPACIO PUBLICITARIO</h2>
             </a>
+        </div>
         </section>
 
     </main>
 
     
 
-     <footer class="footer mt-auto py-3 bg-light">
-        <p>Derechos Reservados - <a href="#">DISPO</a></p>
-        <p>Creciendo Juntos - <a href="#">AR</a></p>
-        
-    </footer>
+     <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><img src="../Imagenes/DISPO.png" width="50" height="50"></svg>
+      </a>
+      <span class="text-muted">© 2022 DIPSO - Derechos Reservados</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter"></i></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/indu_masculina_rya/?hl=es"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+    </ul>
+  </footer>
+</div>
 
 
 </body>

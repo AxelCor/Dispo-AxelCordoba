@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DISPO BABY</title>
+	<title>DISPO</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="shortcut icon" href="./imagenes/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header class="p-3 bg-dark text-white">
@@ -22,7 +25,8 @@
           <input type="search" class="form-control form-control-dark" placeholder="Busqueda.." aria-label="Search">
         </form>
         <div class="text-end">
-          <a href="./pages/usuario.html"><button type="button" class="btn btn-warning">Login</button></a>
+          <a href="./pages/usuario.html"><button type="button" class="btn btn-outline-light me-2">Perfil</button></a>
+          <a href="./pages/login.html"><button type="button" class="btn btn-warning">Login</button></a>
         </div>
       </div>
     </div>
@@ -31,8 +35,14 @@
 
 	<section class="container">
 		<div class="row">
-			<h1>INDUMENTARIA DEPORTIVA</h1>	
+			
+			<h1 class="mt-4 display-3 animate__animated animate__flash animate__slow animate__infinite"><div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>  INDUMENTARIA DEPORTIVA  <div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div></h1>
 		</div>
+
 	</section>
 	
 	<section class="container">
@@ -43,7 +53,7 @@
 
 			<div class="col-sm-3"> <a href="#" class="text-reset position-relative">
                 <img  src="./Imagenes/destacado.jpg" class="img-fluid">
-                    <h2 class="position-absolute top-50 start-50 translate-middle text-warning bg-secondary rounded">DESTACADO</h2>
+                    <h2 class="position-absolute top-50 start-50 translate-middle text-warning bg-secondary rounded ">DESTACADO</h2>
             </a></div>
 
 			<div class="col-sm-3"><a href="#" class="text-reset position-relative">
@@ -59,35 +69,48 @@
 
 	<section class="container">
 		<div class="row">
-			<div class="col-sm-6">
-			<h3>Listo para entrenar</h3>
-			
-            <h5>Comodidad</h5>
-            <h5>Calidad Premium</h5>
-            <h5>Variedad</h5>
-          
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="mt-4 col-sm-6">
+			<h1 class="display-5 text-warning animate__animated animate__slow animate__infinite animate__heartBeat">Listo para entrenar</h1>	
+            <h3>Comodidad - Calidad Premium - Variedad</h3>
+            <div class="fw-bold">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
             </div>
-            <div class="col-sm-6">
+            <div class="mt-4 mb-4 col-sm-6">
             <img class="img-fluid" src="Imagenes/entrenando.jpeg">
 			</div>		
 		</div>
 	</section>
 	<section class="container" >
-            <a href="https://www.instagram.com/indu_masculina_rya/?hl=es">
+		<div class="mt-4 alert alert-secondary" role="alert">
+  			<a href="https://www.instagram.com/indu_masculina_rya/?hl=es" class="text-decoration-none link-warning">
             <h2>ESPACIO PUBLICITARIO</h2>
             </a>
-        </section>
+		</div>
+		</section>
 
 </main>
-<footer class="footer mt-auto py-3 bg-light">
-        <p>Derechos Reservados - <a href="#">DISPO</a></p>
-        <p>Creciendo Juntos - <a href="#">AR</a></p>
-    </footer>
+
+    <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><img src="./Imagenes/DISPO.png" width="50" height="50"></svg>
+      </a>
+      <span class="text-muted">© 2022 DIPSO - Derechos Reservados</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter"></i></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/indu_masculina_rya/?hl=es"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+    </ul>
+  </footer>
+
+</div>
 </body>
 </html>
