@@ -1,0 +1,25 @@
+{
+  "name": "dispo---axel-cordoba",
+  "version": "1.0.0",
+  "description": "-  Maquetando con Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "start": "sass style.scss css/style.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelCor/Dispo-AxelCordoba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelCor/Dispo-AxelCordoba/issues"
+  },
+  "homepage": "https://github.com/AxelCor/Dispo-AxelCordoba#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
