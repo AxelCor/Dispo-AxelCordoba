@@ -1,0 +1,13 @@
+@mixin Margin($margin-top, $margin-bottom){
+	margin-top:$margin-top;
+	margin-bottom:$margin-bottom;
+}
+
+
+
+$styleDispo:(
+	color:#ffc107,
+	lineaAbajo:2px solid #ffc107,
+	sombra: 0 20px 30px rgba(0, 0, 0, 0.2),
+)
+

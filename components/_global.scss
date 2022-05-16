@@ -23,6 +23,7 @@ h1{
   display: flex;
     justify-content: center;
     align-items: center;
+    @include Margin(20px,20px);
    
 }
 .spinner-grow{
@@ -40,15 +41,20 @@ a:hover{
 }
 
 
-.globo{
-	
+.globo2{
 	border-radius: 20px;
 	background-color: #fff;
+	padding:20px;
+	box-shadow: map-get($styleDispo,sombra);
+	@include Margin(20px,20px);
+}
+
+.globo{
+	@extend .globo2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 30px 20px;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 	width:80%;
 }
 
@@ -58,3 +64,61 @@ a:hover{
 	justify-content: center;
 	align-items: center;
 }
+
+.separando{
+	gap: 70px;
+}
+
+ul{
+	list-style: none;
+	padding:0;
+}
+
+.globo{
+	& ul{
+	& li{
+
+	border-bottom: map-get($styleDispo,lineaAbajo);
+	font-weight: bolder;
+  font-size: 2vh;
+	}
+	}
+
+
+}
+
+.navBar{
+	& li{
+	border-bottom: map-get($styleDispo, lineaAbajo);
+	}
+}
+
+
+.separacion{
+			display:flex;
+	    justify-content: space-between;
+	    @include Margin(20px,20px);
+
+	   
+}
+.planillaDatos{
+	    display: flex;
+    @include Margin(20px,20px);
+    flex-direction: column;
+    align-items: center;
+	    & li{
+	    border-bottom: map-get($styleDispo,lineaAbajo);
+	    }
+	
+}
+
+.btnEnviar{
+	margin-top:15px;
+}
+
+.usuario{
+	
+	background: linear-gradient(to left, darkgray, #9e9e9e57);
+}
+
+
