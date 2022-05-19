@@ -3,3 +3,5 @@
 
 -  Maquetando con Bootstrap
 - SASS
+- SASS II
+- SEO
