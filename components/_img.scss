@@ -2,9 +2,6 @@
 	
 
 	.imgPrincipal{
-	width: 100%;
-	height: auto;
-	
 	border-radius: 20px;
 	 transition: 0.5s;
     margin-top: 20px;
@@ -23,4 +20,9 @@ transform: scale(0.9);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+.imgIndex{
+	height: 20vw;
+    width: -webkit-fill-available;
 }
